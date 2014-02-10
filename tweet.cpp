@@ -1,9 +1,9 @@
 
-
 // Message to post
 char msg[] = "Hi, I'm tweeting from a freaking arduino right now!";
 #include <string.h>
 #define LIB_DOMAIN "arduino-tweet.appspot.com"
+#define TOKEN "**PLACE TOKEN HERE**"
 TCPClient client;
 // EXAMPLE USAGE
 
@@ -19,10 +19,10 @@ void setup()
     client.println("POST /update HTTP/1.0");
     client.println("Host: " LIB_DOMAIN);
     client.print("Content-Length: ");
-    client.println(strlen(msg)+strlen(**PLACE TOKEN HERE**)+14);
+    client.println(strlen(msg)+strlen(TOKEN)+14);
     client.println();
     client.print("token=");
-    client.print(**PLACE TOKEN HERE**);
+    client.print(TOKEN);
     client.print("&status=");
     client.println(msg);
 }
