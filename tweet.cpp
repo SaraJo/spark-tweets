@@ -27,7 +27,7 @@ void setup()
     client.println(msg);
 }
 
-void loop() {
-
+void loop() 
+{
   Serial.println("connecting .test");
 }
