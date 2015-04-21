@@ -10,7 +10,7 @@ TCPClient client;
 void setup()
 {
   delay(1000);
-  // or you can use DHCP for autoomatic IP address configuration.
+  // or you can use DHCP for automatic IP address configuration.
   // Ethernet.begin(mac);
   Serial.begin(9600);
   
